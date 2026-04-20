@@ -1,0 +1,9 @@
+{
+    "decoder_crc_valid": true,
+    "decoder_name": "ax25",
+    "decoder_version": "1.3",
+    "pdu": "kKZggpZAdpCmYJZAQGED8AAAaQAAAQEAYQAAAABmAAAAAAAAAAAAAH9qbD+LbGc+AAAAAH9qvDzjpRs/AAAAAAAAAADNzIpAAACIPwAAAAAAAAA+ZmaiQAAAAAAAAAAApHCWQMP1lUBxPZtAmpmnQJqZBUEAAGcAAcYAAAAzQQAANkEAADNBAAAyQSlcBUHRIpu+zUwFQdEimz7ueAAAaAAAQkNO",
+    "sample_cnt": 1466,
+    "sample_start": 96646,
+    "time": "2026-04-15T15:41:59.033199Z"
+}
