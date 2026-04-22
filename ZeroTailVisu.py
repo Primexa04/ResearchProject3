@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 
 
 RAW_PATH = Path(r"Knacksat2_13753740_replayed_iq_out\Knacksat2_13753740_replayed_cf32.raw")
+OUT_PATH = Path(r"Knacksat2_13753740_replayed_iq_out\zero_tail_plot.png")
+
 SAMPLE_RATE = 78125.0
 VIEW_LAST_SEC = 0.15
 ZERO_THRESHOLD = 1e-12
@@ -30,7 +32,7 @@ mag_view = mag[start_idx:end_idx]
 zero_tail_start_t = zero_tail_start / SAMPLE_RATE
 file_end_t = len(iq) / SAMPLE_RATE
 
-fig, ax = plt.subplots(figsize=(6.5, 6.5))
+fig, ax = plt.subplots(figsize=(6, 3))
 ax.plot(t, mag_view, linewidth=1.2, color="black")
 ax.axvline(
     zero_tail_start_t,
@@ -71,4 +73,5 @@ ax.text(
 ax.legend(loc="lower left")
 
 plt.tight_layout()
+fig.savefig(OUT_PATH, dpi=1200, bbox_inches="tight")
 plt.show()
