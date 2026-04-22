@@ -8,8 +8,8 @@ FILES = [
     {
         "path": Path(r"Decoded\Authentic\waterfall.dat"),
         "title": "Authentic replay",
-        "tmin": 100.0,  
-        "tmax": 300.0,
+        "tmin": 0.0,  
+        "tmax": 550.0,
         "fmin": -8.0,
         "fmax": 8.0,
         "out": Path("AuthenticWaterfall.png"),
@@ -17,8 +17,8 @@ FILES = [
     {
         "path": Path(r"Decoded\Reconstructed\waterfall.dat"),
         "title": "Reconstructed replay",
-        "tmin": 0,
-        "tmax": 15.0,
+        "tmin": 0.0,
+        "tmax": 35.0,
         "fmin": -8.0,
         "fmax": 8.0,
         "out": Path("ReconstructedWaterfall.png"),
